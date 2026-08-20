@@ -1,0 +1,86 @@
+{
+ "Arsenal": {
+  "xg": 1.763,
+  "xga": 0.74
+ },
+ "Aston Villa": {
+  "xg": 1.287,
+  "xga": 1.36
+ },
+ "Bournemouth": {
+  "xg": 1.45,
+  "xga": 1.49
+ },
+ "Brentford": {
+  "xg": 1.595,
+  "xga": 1.45
+ },
+ "Brighton": {
+  "xg": 1.523,
+  "xga": 1.29
+ },
+ "Burnley": {
+  "xg": 0.864,
+  "xga": 2.04
+ },
+ "Chelsea": {
+  "xg": 1.758,
+  "xga": 1.44
+ },
+ "Crystal Palace": {
+  "xg": 1.609,
+  "xga": 1.39
+ },
+ "Everton": {
+  "xg": 1.231,
+  "xga": 1.48
+ },
+ "Fulham": {
+  "xg": 1.285,
+  "xga": 1.39
+ },
+ "Leeds": {
+  "xg": 1.427,
+  "xga": 1.29
+ },
+ "Liverpool": {
+  "xg": 1.594,
+  "xga": 1.14
+ },
+ "Man City": {
+  "xg": 2.106,
+  "xga": 1.13
+ },
+ "Man Utd": {
+  "xg": 1.71,
+  "xga": 1.23
+ },
+ "Newcastle": {
+  "xg": 1.523,
+  "xga": 1.23
+ },
+ "Nott'm Forest": {
+  "xg": 1.213,
+  "xga": 1.52
+ },
+ "Spurs": {
+  "xg": 1.064,
+  "xga": 1.49
+ },
+ "Sunderland": {
+  "xg": 1.012,
+  "xga": 1.43
+ },
+ "West Ham": {
+  "xg": 1.228,
+  "xga": 1.76
+ },
+ "Wolves": {
+  "xg": 0.873,
+  "xga": 1.53
+ },
+ "_default_promoted": {
+  "xg": 0.95,
+  "xga": 1.75
+ }
+}

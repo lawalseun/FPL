@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FPL Weekly</title>
+<style>
+:root{
+  color-scheme: light;
+  --plane:#f9f9f7; --surface:#fcfcfb;
+  --ink:#0b0b0b; --ink-2:#52514e; --muted:#898781;
+  --grid:#e1e0d9; --axis:#c3c2b7; --ring:rgba(11,11,11,.10);
+  --bar:#2a78d6; --bar-soft:#9ec5f4;
+  --good:#0ca30c; --warn:#fab219; --serious:#ec835a; --crit:#d03b3b;
+  --s100:#cde2fb; --s250:#86b6ef; --s400:#3987e5; --s550:#1c5cab; --s650:#104281;
+}
+@media (prefers-color-scheme: dark){
+  :root:where(:not([data-theme="light"])){
+    color-scheme: dark;
+    --plane:#0d0d0d; --surface:#1a1a19;
+    --ink:#fff; --ink-2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --axis:#383835; --ring:rgba(255,255,255,.10);
+    --bar:#3987e5; --bar-soft:#184f95;
+    --s100:#184f95; --s250:#1c5cab; --s400:#2a78d6; --s550:#5598e7; --s650:#9ec5f4;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --plane:#0d0d0d; --surface:#1a1a19;
+  --ink:#fff; --ink-2:#c3c2b7; --muted:#898781;
+  --grid:#2c2c2a; --axis:#383835; --ring:rgba(255,255,255,.10);
+  --bar:#3987e5; --bar-soft:#184f95;
+  --s100:#184f95; --s250:#1c5cab; --s400:#2a78d6; --s550:#5598e7; --s650:#9ec5f4;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--plane);color:var(--ink);
+  font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:1120px;margin:0 auto;padding:24px 18px 72px}
+header{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:20px}
+h1{font-size:20px;margin:0;letter-spacing:-.01em}
+h2{font-size:13px;margin:0 0 12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:600}
+.stamp{color:var(--muted);font-size:12px}
+button.toggle{margin-left:auto;background:none;border:1px solid var(--ring);color:var(--ink-2);
+  border-radius:999px;padding:5px 13px;cursor:pointer;font:inherit;font-size:13px}
+.card{background:var(--surface);border:1px solid var(--ring);border-radius:12px;padding:18px;margin-bottom:16px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:16px}
+.tile{background:var(--surface);border:1px solid var(--ring);border-radius:12px;padding:15px 16px}
+.tile .k{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:600}
+.tile .v{font-size:27px;line-height:1.15;margin-top:5px;letter-spacing:-.02em}
+.tile .s{font-size:12px;color:var(--ink-2);margin-top:3px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:820px){.cols{grid-template-columns:1fr}}
+.row{display:grid;grid-template-columns:22px 1fr 46px 1fr 52px;gap:9px;align-items:center;
+  padding:5px 0;font-size:14px}
+.row+.row{border-top:1px solid var(--grid)}
+.pos{font-size:10px;color:var(--muted);font-weight:700}
+.nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.opp{font-size:12px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.bartrack{display:block;width:100%}
+.bar{display:block;height:9px;background:var(--bar);border-radius:0 4px 4px 0;min-width:2px}
+.xp{text-align:right;font-size:13px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.c-badge{display:inline-block;background:var(--bar);color:#fff;border-radius:4px;
+  font-size:9px;padding:1px 4px;margin-left:5px;vertical-align:1px;font-weight:700}
+.v-badge{background:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.06em;
+  color:var(--muted);font-weight:600;padding:0 8px 8px 0;border-bottom:1px solid var(--axis)}
+td{padding:8px 8px 8px 0;border-bottom:1px solid var(--grid);font-variant-numeric:tabular-nums}
+td.t{font-variant-numeric:normal}
+.grid-fx{overflow-x:auto}
+.grid-fx table td,.grid-fx table th{text-align:center;padding:0;border:none}
+.cell{display:block;margin:2px;border-radius:5px;padding:6px 4px;font-size:11px;
+  font-weight:600;letter-spacing:.02em}
+.tag{font-size:11px;padding:2px 7px;border-radius:999px;border:1px solid var(--ring);color:var(--ink-2)}
+.note{font-size:13px;color:var(--ink-2);margin:4px 0 0}
+.chip{border-left:3px solid var(--axis);padding:2px 0 2px 12px;margin:12px 0}
+.chip.now{border-color:var(--good)}
+.chip .h{font-weight:600;font-size:14px}
+.alert{display:flex;gap:8px;align-items:flex-start;font-size:13px;padding:7px 0;border-bottom:1px solid var(--grid)}
+.dot{width:8px;height:8px;border-radius:50%;margin-top:6px;flex:0 0 8px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--ink-2);margin-top:10px}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.empty{color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>FPL Weekly</h1>
+    <span class="stamp" id="stamp"></span>
+    <button class="toggle" id="theme">Theme</button>
+  </header>
+  <div id="app"><p class="empty">Loading data.json…</p></div>
+</div>
+
+<script>
+const $ = (h) => { const t = document.createElement('template'); t.innerHTML = h.trim(); return t.content.firstChild; };
+const esc = (s) => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const POS = {1:'GK',2:'DEF',3:'MID',4:'FWD'};
+
+document.getElementById('theme').onclick = () => {
+  const r = document.documentElement;
+  r.dataset.theme = r.dataset.theme === 'dark' ? 'light' : 'dark';
+};
+
+function countdown(iso){
+  if(!iso) return {txt:'—', sub:''};
+  const ms = new Date(iso) - new Date();
+  if (ms < 0) return {txt:'locked', sub:'deadline passed'};
+  const h = Math.floor(ms/3.6e6), d = Math.floor(h/24);
+  return { txt: d >= 1 ? `${d}d ${h%24}h` : `${h}h ${Math.floor(ms/6e4)%60}m`,
+           sub: new Date(iso).toLocaleString(undefined,{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}) };
+}
+
+function playerRows(list, capName, viceName, max){
+  return list.map(p => {
+    const w = Math.max(2, (p.xp / max) * 100);
+    const badge = p.name === capName ? '<span class="c-badge">C</span>'
+                : p.name === viceName ? '<span class="c-badge v-badge">V</span>' : '';
+    const fx = (p.n_fix === 0) ? 'blank' : p.opp || '';
+    return `<div class="row">
+      <span class="pos">${POS[p.pos]}</span>
+      <span class="nm">${esc(p.name)}${badge}</span>
+      <span class="opp">${esc(p.team)}</span>
+      <span class="bartrack"><span class="bar" style="width:${w.toFixed(1)}%"></span></span>
+      <span class="xp">${p.xp.toFixed(1)}</span>
+    </div>`;
+  }).join('');
+}
+
+function squadCard(title, sq, note){
+  const all = [...sq.xi, ...sq.bench];
+  const max = Math.max(...all.map(p => p.xp), 1);
+  return `<section class="card">
+    <h2>${esc(title)}</h2>
+    ${playerRows(sq.xi, sq.captain, sq.vice, max)}
+    <h2 style="margin:18px 0 10px">Bench — in this order</h2>
+    ${playerRows(sq.bench, null, null, max)}
+    ${note ? `<p class="note">${note}</p>` : ''}
+    <p class="note">Bars are projected points for this gameweek. Numbers on the right are the same values.</p>
+  </section>`;
+}
+
+function fdrColor(t){ // sequential blue: light = easy, dark = hard
+  return ['var(--s100)','var(--s250)','var(--s400)','var(--s550)','var(--s650)'][t-1];
+}
+function fdrInk(t){ return t >= 3 ? '#fff' : 'var(--ink)'; }
+
+function difficulty(teams, oppShort, home){
+  // rough 1-5 band from the opponent's attack+defence rating
+  const vals = Object.values(teams);
+  const o = vals.find(v => v.short === oppShort);
+  if(!o) return 3;
+  const strength = o.xg - o.xga;
+  const sorted = vals.map(v => v.xg - v.xga).sort((a,b)=>a-b);
+  const rank = sorted.filter(s => s < strength).length / sorted.length;
+  let t = Math.min(5, Math.max(1, Math.ceil(rank * 5)));
+  if (!home) t = Math.min(5, t + 1);
+  return t;
+}
+
+function fixtureGrid(d){
+  const gws = Object.keys(d.fixtures).map(Number).sort((a,b)=>a-b);
+  const teams = [...new Set(Object.values(d.fixtures).flatMap(g => Object.keys(g)))].sort();
+  const head = gws.map(g => `<th>GW${g}</th>`).join('');
+  const body = teams.map(t => {
+    const cells = gws.map(g => {
+      const fx = (d.fixtures[String(g)]||{})[t];
+      if(!fx || !fx.length) return `<td><span class="cell" style="background:var(--grid);color:var(--muted)">—</span></td>`;
+      return `<td>` + fx.map(f => {
+        const tier = difficulty(d.teams, f.opp, f.home);
+        const lbl = f.home ? f.opp.toUpperCase() : f.opp.toLowerCase();
+        return `<span class="cell" style="background:${fdrColor(tier)};color:${fdrInk(tier)}" title="${esc(f.opp)} ${f.home?'(home)':'(away)'} — difficulty ${tier}/5">${esc(lbl)}</span>`;
+      }).join('') + `</td>`;
+    }).join('');
+    return `<tr><th style="text-align:left;padding-right:10px;border:none">${esc(t)}</th>${cells}</tr>`;
+  }).join('');
+  return `<section class="card">
+    <h2>Fixture ticker — next ${gws.length} gameweeks</h2>
+    <div class="grid-fx"><table><thead><tr><th style="border:none"></th>${head}</tr></thead><tbody>${body}</tbody></table></div>
+    <div class="legend">
+      <span><i style="background:var(--s100)"></i>easiest</span>
+      <span><i style="background:var(--s250)"></i></span>
+      <span><i style="background:var(--s400)"></i></span>
+      <span><i style="background:var(--s550)"></i></span>
+      <span><i style="background:var(--s650)"></i>hardest</span>
+      <span>UPPERCASE = home, lowercase = away, — = blank gameweek</span>
+    </div>
+  </section>`;
+}
+
+function transfers(m){
+  if(!m || !m.transfers || !m.transfers.length) return '';
+  const rows = m.transfers.map(t => `<tr>
+    <td class="t">${t.in.length ? esc(t.out.join(', ')) : '<em>roll the transfer</em>'}</td>
+    <td class="t">${t.in.length ? esc(t.in.join(', ')) : '—'}</td>
+    <td>${t.cost > 0 ? '+' : ''}${t.cost.toFixed(1)}</td>
+    <td>${t.hits ? '−' + (t.hits*4) : '0'}</td>
+    <td style="color:${t.net > 0 ? 'var(--good)' : 'var(--ink-2)'}">${t.net > 0 ? '+' : ''}${t.net.toFixed(2)}</td>
+  </tr>`).join('');
+  return `<section class="card">
+    <h2>Transfer options — ${m.free_transfers} free, £${m.bank.toFixed(1)}m in the bank</h2>
+    <table><thead><tr><th>Out</th><th>In</th><th>£ change</th><th>Hit</th><th>Net pts</th></tr></thead>
+    <tbody>${rows}</tbody></table>
+    <p class="note">Net points are over the next 5 gameweeks, already charged 4 points per extra transfer.
+    Anything below zero means do nothing and bank the transfer.</p>
+  </section>`;
+}
+
+function chips(m){
+  if(!m || !m.chips || !m.chips.length) return '';
+  const items = m.chips.map(c => `<div class="chip ${c.now ? 'now' : ''}">
+    <div class="h">${esc(c.chip)}${c.now ? ' — play it this week' : c.best_gw ? ` — best window GW${c.best_gw}` : ' — hold'}</div>
+    <p class="note">${esc(c.why)}</p></div>`).join('');
+  return `<section class="card"><h2>Chip strategy</h2>${items}</section>`;
+}
+
+function flagged(d){
+  if(!d.flagged || !d.flagged.length) return '';
+  const rows = d.flagged.slice(0,12).map(f => {
+    const col = f.status === 'i' || f.status === 's' ? 'var(--crit)' : 'var(--warn)';
+    return `<div class="alert"><span class="dot" style="background:${col}"></span>
+      <span><strong>${esc(f.name)}</strong> <span class="opp">${esc(f.team)}</span> — ${esc(f.news || f.status)}
+      <span class="tag">${f.sel.toFixed(1)}% owned</span></span></div>`;
+  }).join('');
+  return `<section class="card"><h2>Availability watch</h2>${rows}</section>`;
+}
+
+function topPicks(d){
+  const blocks = [1,2,3,4].map(p => {
+    const list = (d.top[POS[p]] || []).slice(0, 10);
+    if(!list.length) return '';
+    const max = Math.max(...list.map(x => x.xp), 1);
+    return `<div><h2>${POS[p]} — best value this week</h2>${playerRows(list, null, null, max)}</div>`;
+  }).join('');
+  return `<section class="card"><div class="cols">${blocks}</div>
+    <p class="note">Ranked by projected points for this gameweek only. Cross-check the fixture ticker before you buy.</p></section>`;
+}
+
+fetch('data.json?' + Date.now()).then(r => r.json()).then(d => {
+  const cd = countdown(d.deadline);
+  const src = d.mine || d.optimal;
+  document.getElementById('stamp').textContent =
+    'Gameweek ' + d.gw + ' · updated ' + new Date(d.generated).toLocaleString();
+
+  const tiles = `<div class="tiles">
+    <div class="tile"><div class="k">Deadline in</div><div class="v">${cd.txt}</div><div class="s">${cd.sub}</div></div>
+    <div class="tile"><div class="k">Captain</div><div class="v">${esc(src.captain)}</div><div class="s">vice ${esc(src.vice)}</div></div>
+    <div class="tile"><div class="k">Projected XI</div><div class="v">${(src.xp||0).toFixed(1)}</div><div class="s">points, captain included</div></div>
+    <div class="tile"><div class="k">Squad value</div><div class="v">£${(d.optimal.cost||0).toFixed(1)}m</div><div class="s">optimal build</div></div>
+  </div>`;
+
+  const html = tiles
+    + (d.mine ? squadCard('Your team — recommended XI', d.mine) : '')
+    + transfers(d.mine)
+    + chips(d.mine)
+    + squadCard(d.mine ? 'Best possible squad at £100m (for reference)' : 'Recommended squad',
+                d.optimal, d.mine ? 'This is what the solver would build from scratch. Use it to spot where your squad is leaking points.' : '')
+    + fixtureGrid(d)
+    + topPicks(d)
+    + flagged(d);
+
+  document.getElementById('app').innerHTML = html;
+}).catch(e => {
+  document.getElementById('app').innerHTML =
+    '<section class="card"><h2>No data yet</h2><p class="note">Run <code>python -m fpl.build</code> to generate <code>docs/data.json</code>, then reload. (' + esc(e.message) + ')</p></section>';
+});
+</script>
+</body>
+</html>

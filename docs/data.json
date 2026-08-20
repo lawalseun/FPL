@@ -1,0 +1,2321 @@
+{
+ "generated": "2026-08-19T14:35:53+00:00",
+ "gw": 1,
+ "deadline": "2026-08-21T17:30:00+00:00",
+ "solver_status": "Optimal",
+ "teams": {
+  "1": {
+   "name": 0,
+   "short": "ARS",
+   "xg": 1.63595,
+   "xga": 0.96645
+  },
+  "2": {
+   "name": 1,
+   "short": "AVL",
+   "xg": 1.32655,
+   "xga": 1.36945
+  },
+  "3": {
+   "name": 2,
+   "short": "BOU",
+   "xg": 1.4324999999999999,
+   "xga": 1.45395
+  },
+  "4": {
+   "name": 3,
+   "short": "BRE",
+   "xg": 1.52675,
+   "xga": 1.42795
+  },
+  "5": {
+   "name": 4,
+   "short": "BHA",
+   "xg": 1.4799499999999999,
+   "xga": 1.32395
+  },
+  "6": {
+   "name": 5,
+   "short": "CHE",
+   "xg": 1.6327,
+   "xga": 1.4214499999999999
+  },
+  "7": {
+   "name": 6,
+   "short": "COV",
+   "xg": 1.1075,
+   "xga": 1.62295
+  },
+  "8": {
+   "name": 7,
+   "short": "CRY",
+   "xg": 1.53585,
+   "xga": 1.38895
+  },
+  "9": {
+   "name": 8,
+   "short": "EVE",
+   "xg": 1.2901500000000001,
+   "xga": 1.44745
+  },
+  "10": {
+   "name": 9,
+   "short": "FUL",
+   "xg": 1.3252499999999998,
+   "xga": 1.38895
+  },
+  "11": {
+   "name": 10,
+   "short": "HUL",
+   "xg": 1.1075,
+   "xga": 1.62295
+  },
+  "12": {
+   "name": 11,
+   "short": "IPS",
+   "xg": 1.1075,
+   "xga": 1.62295
+  },
+  "13": {
+   "name": 12,
+   "short": "LEE",
+   "xg": 1.41755,
+   "xga": 1.32395
+  },
+  "14": {
+   "name": 13,
+   "short": "LIV",
+   "xg": 1.5261,
+   "xga": 1.22645
+  },
+  "15": {
+   "name": 14,
+   "short": "MCI",
+   "xg": 1.8589,
+   "xga": 1.2199499999999999
+  },
+  "16": {
+   "name": 15,
+   "short": "MUN",
+   "xg": 1.6015,
+   "xga": 1.28495
+  },
+  "17": {
+   "name": 16,
+   "short": "NEW",
+   "xg": 1.4799499999999999,
+   "xga": 1.28495
+  },
+  "18": {
+   "name": 17,
+   "short": "NFO",
+   "xg": 1.27845,
+   "xga": 1.4734500000000001
+  },
+  "19": {
+   "name": 18,
+   "short": "TOT",
+   "xg": 1.1816,
+   "xga": 1.45395
+  },
+  "20": {
+   "name": 19,
+   "short": "SUN",
+   "xg": 1.1478,
+   "xga": 1.41495
+  }
+ },
+ "optimal": {
+  "xi": [
+   {
+    "id": 109,
+    "name": "Verbruggen",
+    "team": "BHA",
+    "teamid": 5,
+    "pos": 1,
+    "cost": 4.5,
+    "sel": 16.7,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.39,
+    "xp_horizon": 3.22,
+    "xp_gw2": 2.92,
+    "xp_gw3": 3.31,
+    "xp_gw4": 3.34,
+    "xp_gw5": 3.14,
+    "in_sq": 1,
+    "in_xi": 0,
+    "is_cap": 0
+   },
+   {
+    "id": 4,
+    "name": "Gabriel",
+    "team": "ARS",
+    "teamid": 1,
+    "pos": 2,
+    "cost": 8.0,
+    "sel": 25.9,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.9,
+    "n_fix": 1,
+    "xp": 5.42,
+    "xp_horizon": 4.78,
+    "xp_gw2": 4.47,
+    "xp_gw3": 4.66,
+    "xp_gw4": 4.75,
+    "xp_gw5": 4.25,
+    "in_sq": 1,
+    "in_xi": 1,
+    "is_cap": 0
+   },
+   {
+    "id": 8,
+    "name": "Calafiori",
+    "team": "ARS",
+    "teamid": 1,
+    "pos": 2,
+    "cost": 5.5,
+    "sel": 15.3,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.79,
+    "n_fix": 1,
+    "xp": 4.32,
+    "xp_horizon": 3.68,
+    "xp_gw2": 3.36,
+    "xp_gw3": 3.61,
+    "xp_gw4": 3.61,
+    "xp_gw5": 3.16,
+    "in_sq": 1,
+    "in_xi": 1,
+    "is_cap": 0
+   },
+   {
+    "id": 445,
+    "name": "Thiaw",
+    "team": "NEW",
+    "teamid": 17,
+    "pos": 2,
+    "cost": 5.0,
+    "sel": 2.1,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 4.01,
+    "xp_horizon": 4.13,
+    "xp_gw2": 4.04,
+    "xp_gw3": 4.29,
+    "xp_gw4": 3.61,
+    "xp_gw5": 4.88,
+    "in_sq": 1,
+    "in_xi": 1,
+    "is_cap": 0
+   },
+   {
+    "id": 426,
+    "name": "B.Fernandes",
+    "team": "MUN",
+    "teamid": 16,
+    "pos": 3,
+    "cost": 12.0,
+    "sel": 48.6,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 5.79,
+    "xp_horizon": 5.78,
+    "xp_gw2": 6.47,
+    "xp_gw3": 5.47,
+    "xp_gw4": 5.54,
+    "xp_gw5": 5.38,
+    "in_sq": 1,
+    "in_xi": 1,
+    "is_cap": 0
+   },
+   {
+    "id": 94,
+    "name": "Schade",
+    "team": "BRE",
+    "teamid": 4,
+    "pos": 3,
+    "cost": 6.0,
+    "sel": 2.3,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.9,
+    "n_fix": 1,
+    "xp": 4.51,
+    "xp_horizon": 4.22,
+    "xp_gw2": 3.79,
+    "xp_gw3": 4.46,
+    "xp_gw4": 3.95,
+    "xp_gw5": 4.36,
+    "in_sq": 1,
+    "in_xi": 1,
+    "is_cap": 0
+   },
+   {
+    "id": 481,
+    "name": "Anderson",
+    "team": "MCI",
+    "teamid": 15,
+    "pos": 3,
+    "cost": 6.5,
+    "sel": 11.8,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 4.43,
+    "xp_horizon": 4.35,
+    "xp_gw2": 4.15,
+    "xp_gw3": 4.62,
+    "xp_gw4": 4.09,
+    "xp_gw5": 4.49,
+    "in_sq": 1,
+    "in_xi": 1,
+    "is_cap": 0
+   },
+   {
+    "id": 155,
+    "name": "Enzo",
+    "team": "CHE",
+    "teamid": 6,
+    "pos": 3,
+    "cost": 7.0,
+    "sel": 5.4,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 4.42,
+    "xp_horizon": 4.54,
+    "xp_gw2": 4.79,
+    "xp_gw3": 3.81,
+    "xp_gw4": 5.37,
+    "xp_gw5": 4.43,
+    "in_sq": 1,
+    "in_xi": 1,
+    "is_cap": 0
+   },
+   {
+    "id": 411,
+    "name": "Haaland",
+    "team": "MCI",
+    "teamid": 15,
+    "pos": 4,
+    "cost": 15.5,
+    "sel": 75.0,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 6.43,
+    "xp_horizon": 6.15,
+    "xp_gw2": 5.63,
+    "xp_gw3": 6.83,
+    "xp_gw4": 5.43,
+    "xp_gw5": 6.34,
+    "in_sq": 1,
+    "in_xi": 1,
+    "is_cap": 1
+   },
+   {
+    "id": 165,
+    "name": "Jo\u00e3o Pedro",
+    "team": "CHE",
+    "teamid": 6,
+    "pos": 4,
+    "cost": 7.5,
+    "sel": 54.7,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.87,
+    "n_fix": 1,
+    "xp": 4.2,
+    "xp_horizon": 4.3,
+    "xp_gw2": 4.5,
+    "xp_gw3": 3.7,
+    "xp_gw4": 4.94,
+    "xp_gw5": 4.24,
+    "in_sq": 1,
+    "in_xi": 1,
+    "is_cap": 0
+   },
+   {
+    "id": 346,
+    "name": "Calvert-Lewin",
+    "team": "LEE",
+    "teamid": 13,
+    "pos": 4,
+    "cost": 6.0,
+    "sel": 21.3,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.89,
+    "n_fix": 1,
+    "xp": 4.09,
+    "xp_horizon": 4.2,
+    "xp_gw2": 4.45,
+    "xp_gw3": 3.91,
+    "xp_gw4": 4.24,
+    "xp_gw5": 4.39,
+    "in_sq": 1,
+    "in_xi": 1,
+    "is_cap": 0
+   }
+  ],
+  "bench": [
+   {
+    "id": 497,
+    "name": "Dubravka",
+    "team": "TOT",
+    "teamid": 19,
+    "pos": 1,
+    "cost": 4.0,
+    "sel": 24.6,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.25,
+    "xp_horizon": 3.41,
+    "xp_gw2": 3.43,
+    "xp_gw3": 3.37,
+    "xp_gw4": 3.56,
+    "xp_gw5": 3.53,
+    "in_sq": 1,
+    "in_xi": 1,
+    "is_cap": 0
+   },
+   {
+    "id": 259,
+    "name": "Diop",
+    "team": "IPS",
+    "teamid": 12,
+    "pos": 2,
+    "cost": 4.0,
+    "sel": 20.0,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.85,
+    "n_fix": 1,
+    "xp": 3.12,
+    "xp_horizon": 2.49,
+    "xp_gw2": 2.0,
+    "xp_gw3": 2.55,
+    "xp_gw4": 2.11,
+    "xp_gw5": 2.43,
+    "in_sq": 1,
+    "in_xi": 0,
+    "is_cap": 0
+   },
+   {
+    "id": 489,
+    "name": "Yates",
+    "team": "NFO",
+    "teamid": 18,
+    "pos": 3,
+    "cost": 4.5,
+    "sel": 7.4,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.72,
+    "n_fix": 1,
+    "xp": 2.14,
+    "xp_horizon": 2.13,
+    "xp_gw2": 1.98,
+    "xp_gw3": 2.23,
+    "xp_gw4": 2.04,
+    "xp_gw5": 2.3,
+    "in_sq": 1,
+    "in_xi": 0,
+    "is_cap": 0
+   },
+   {
+    "id": 175,
+    "name": "van Ewijk",
+    "team": "COV",
+    "teamid": 7,
+    "pos": 2,
+    "cost": 4.0,
+    "sel": 16.7,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.85,
+    "n_fix": 1,
+    "xp": 1.25,
+    "xp_horizon": 1.61,
+    "xp_gw2": 2.33,
+    "xp_gw3": 1.03,
+    "xp_gw4": 1.82,
+    "xp_gw5": 1.69,
+    "in_sq": 1,
+    "in_xi": 0,
+    "is_cap": 0
+   }
+  ],
+  "captain": "Haaland",
+  "vice": "B.Fernandes",
+  "cost": 100.0,
+  "xp": 57.44
+ },
+ "top": {
+  "GK": [
+   {
+    "id": 1,
+    "name": "Raya",
+    "team": "ARS",
+    "teamid": 1,
+    "pos": 1,
+    "cost": 6.0,
+    "sel": 30.7,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.94,
+    "xp_horizon": 3.53,
+    "xp_gw2": 3.36,
+    "xp_gw3": 3.38,
+    "xp_gw4": 3.57,
+    "xp_gw5": 3.19
+   },
+   {
+    "id": 82,
+    "name": "Kelleher",
+    "team": "BRE",
+    "teamid": 4,
+    "pos": 1,
+    "cost": 5.0,
+    "sel": 5.6,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.61,
+    "xp_horizon": 3.39,
+    "xp_gw2": 3.17,
+    "xp_gw3": 3.65,
+    "xp_gw4": 3.16,
+    "xp_gw5": 3.25
+   },
+   {
+    "id": 529,
+    "name": "Roefs",
+    "team": "SUN",
+    "teamid": 20,
+    "pos": 1,
+    "cost": 5.0,
+    "sel": 5.3,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.49,
+    "xp_horizon": 3.35,
+    "xp_gw2": 3.54,
+    "xp_gw3": 3.19,
+    "xp_gw4": 3.32,
+    "xp_gw5": 3.05
+   },
+   {
+    "id": 412,
+    "name": "Lammens",
+    "team": "MUN",
+    "teamid": 16,
+    "pos": 1,
+    "cost": 5.0,
+    "sel": 20.2,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.45,
+    "xp_horizon": 3.38,
+    "xp_gw2": 3.73,
+    "xp_gw3": 3.25,
+    "xp_gw4": 3.08,
+    "xp_gw5": 3.22
+   },
+   {
+    "id": 109,
+    "name": "Verbruggen",
+    "team": "BHA",
+    "teamid": 5,
+    "pos": 1,
+    "cost": 4.5,
+    "sel": 16.7,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.39,
+    "xp_horizon": 3.22,
+    "xp_gw2": 2.92,
+    "xp_gw3": 3.31,
+    "xp_gw4": 3.34,
+    "xp_gw5": 3.14
+   },
+   {
+    "id": 384,
+    "name": "Donnarumma",
+    "team": "MCI",
+    "teamid": 15,
+    "pos": 1,
+    "cost": 5.5,
+    "sel": 11.1,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.26,
+    "xp_horizon": 3.22,
+    "xp_gw2": 2.89,
+    "xp_gw3": 3.61,
+    "xp_gw4": 2.84,
+    "xp_gw5": 3.56
+   },
+   {
+    "id": 497,
+    "name": "Dubravka",
+    "team": "TOT",
+    "teamid": 19,
+    "pos": 1,
+    "cost": 4.0,
+    "sel": 24.6,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.25,
+    "xp_horizon": 3.41,
+    "xp_gw2": 3.43,
+    "xp_gw3": 3.37,
+    "xp_gw4": 3.56,
+    "xp_gw5": 3.53
+   },
+   {
+    "id": 28,
+    "name": "Martinez",
+    "team": "AVL",
+    "teamid": 2,
+    "pos": 1,
+    "cost": 5.0,
+    "sel": 4.6,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.21,
+    "xp_horizon": 3.39,
+    "xp_gw2": 3.32,
+    "xp_gw3": 3.5,
+    "xp_gw4": 3.59,
+    "xp_gw5": 3.43
+   },
+   {
+    "id": 226,
+    "name": "Pickford",
+    "team": "EVE",
+    "teamid": 9,
+    "pos": 1,
+    "cost": 5.5,
+    "sel": 9.0,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.2,
+    "xp_horizon": 3.21,
+    "xp_gw2": 3.03,
+    "xp_gw3": 3.15,
+    "xp_gw4": 3.24,
+    "xp_gw5": 3.6
+   },
+   {
+    "id": 198,
+    "name": "Henderson",
+    "team": "CRY",
+    "teamid": 8,
+    "pos": 1,
+    "cost": 5.0,
+    "sel": 3.1,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.16,
+    "xp_horizon": 3.18,
+    "xp_gw2": 3.01,
+    "xp_gw3": 3.13,
+    "xp_gw4": 3.59,
+    "xp_gw5": 3.06
+   },
+   {
+    "id": 140,
+    "name": "S\u00e1nchez",
+    "team": "CHE",
+    "teamid": 6,
+    "pos": 1,
+    "cost": 5.0,
+    "sel": 2.0,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.13,
+    "xp_horizon": 3.17,
+    "xp_gw2": 3.24,
+    "xp_gw3": 2.94,
+    "xp_gw4": 3.58,
+    "xp_gw5": 3.0
+   },
+   {
+    "id": 250,
+    "name": "Leno",
+    "team": "FUL",
+    "teamid": 10,
+    "pos": 1,
+    "cost": 4.5,
+    "sel": 3.1,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.07,
+    "xp_horizon": 3.09,
+    "xp_gw2": 3.23,
+    "xp_gw3": 3.14,
+    "xp_gw4": 2.9,
+    "xp_gw5": 3.09
+   },
+   {
+    "id": 467,
+    "name": "Sels",
+    "team": "NFO",
+    "teamid": 18,
+    "pos": 1,
+    "cost": 5.0,
+    "sel": 1.4,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.87,
+    "n_fix": 1,
+    "xp": 3.06,
+    "xp_horizon": 3.05,
+    "xp_gw2": 2.82,
+    "xp_gw3": 3.24,
+    "xp_gw4": 2.92,
+    "xp_gw5": 3.31
+   },
+   {
+    "id": 442,
+    "name": "Pope",
+    "team": "NEW",
+    "teamid": 17,
+    "pos": 1,
+    "cost": 5.0,
+    "sel": 1.1,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.79,
+    "n_fix": 1,
+    "xp": 2.93,
+    "xp_horizon": 2.98,
+    "xp_gw2": 2.96,
+    "xp_gw3": 3.0,
+    "xp_gw4": 2.8,
+    "xp_gw5": 3.26
+   },
+   {
+    "id": 494,
+    "name": "Vicario",
+    "team": "TOT",
+    "teamid": 19,
+    "pos": 1,
+    "cost": 4.5,
+    "sel": 1.5,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.91,
+    "n_fix": 1,
+    "xp": 2.83,
+    "xp_horizon": 3.05,
+    "xp_gw2": 3.09,
+    "xp_gw3": 3.01,
+    "xp_gw4": 3.25,
+    "xp_gw5": 3.22
+   }
+  ],
+  "DEF": [
+   {
+    "id": 4,
+    "name": "Gabriel",
+    "team": "ARS",
+    "teamid": 1,
+    "pos": 2,
+    "cost": 8.0,
+    "sel": 25.9,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.9,
+    "n_fix": 1,
+    "xp": 5.42,
+    "xp_horizon": 4.78,
+    "xp_gw2": 4.47,
+    "xp_gw3": 4.66,
+    "xp_gw4": 4.75,
+    "xp_gw5": 4.25
+   },
+   {
+    "id": 8,
+    "name": "Calafiori",
+    "team": "ARS",
+    "teamid": 1,
+    "pos": 2,
+    "cost": 5.5,
+    "sel": 15.3,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.79,
+    "n_fix": 1,
+    "xp": 4.32,
+    "xp_horizon": 3.68,
+    "xp_gw2": 3.36,
+    "xp_gw3": 3.61,
+    "xp_gw4": 3.61,
+    "xp_gw5": 3.16
+   },
+   {
+    "id": 388,
+    "name": "Gu\u00e9hi",
+    "team": "MCI",
+    "teamid": 15,
+    "pos": 2,
+    "cost": 6.0,
+    "sel": 24.0,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 4.19,
+    "xp_horizon": 4.03,
+    "xp_gw2": 3.41,
+    "xp_gw3": 4.77,
+    "xp_gw4": 3.27,
+    "xp_gw5": 4.57
+   },
+   {
+    "id": 387,
+    "name": "O'Reilly",
+    "team": "MCI",
+    "teamid": 15,
+    "pos": 2,
+    "cost": 6.5,
+    "sel": 22.9,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.87,
+    "n_fix": 1,
+    "xp": 4.18,
+    "xp_horizon": 3.98,
+    "xp_gw2": 3.33,
+    "xp_gw3": 4.79,
+    "xp_gw4": 3.16,
+    "xp_gw5": 4.52
+   },
+   {
+    "id": 84,
+    "name": "Collins",
+    "team": "BRE",
+    "teamid": 4,
+    "pos": 2,
+    "cost": 5.5,
+    "sel": 2.0,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 4.06,
+    "xp_horizon": 3.62,
+    "xp_gw2": 3.13,
+    "xp_gw3": 4.1,
+    "xp_gw4": 3.16,
+    "xp_gw5": 3.43
+   },
+   {
+    "id": 445,
+    "name": "Thiaw",
+    "team": "NEW",
+    "teamid": 17,
+    "pos": 2,
+    "cost": 5.0,
+    "sel": 2.1,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 4.01,
+    "xp_horizon": 4.13,
+    "xp_gw2": 4.04,
+    "xp_gw3": 4.29,
+    "xp_gw4": 3.61,
+    "xp_gw5": 4.88
+   },
+   {
+    "id": 85,
+    "name": "Van den Berg",
+    "team": "BRE",
+    "teamid": 4,
+    "pos": 2,
+    "cost": 5.0,
+    "sel": 0.7,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.9,
+    "n_fix": 1,
+    "xp": 3.9,
+    "xp_horizon": 3.44,
+    "xp_gw2": 2.93,
+    "xp_gw3": 3.93,
+    "xp_gw4": 2.97,
+    "xp_gw5": 3.28
+   },
+   {
+    "id": 328,
+    "name": "Struijk",
+    "team": "BHA",
+    "teamid": 5,
+    "pos": 2,
+    "cost": 5.0,
+    "sel": 0.5,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.8,
+    "xp_horizon": 3.46,
+    "xp_gw2": 2.88,
+    "xp_gw3": 3.65,
+    "xp_gw4": 3.7,
+    "xp_gw5": 3.22
+   },
+   {
+    "id": 229,
+    "name": "Tarkowski",
+    "team": "EVE",
+    "teamid": 9,
+    "pos": 2,
+    "cost": 6.0,
+    "sel": 9.9,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.73,
+    "xp_horizon": 3.72,
+    "xp_gw2": 3.35,
+    "xp_gw3": 3.61,
+    "xp_gw4": 3.72,
+    "xp_gw5": 4.46
+   },
+   {
+    "id": 10,
+    "name": "White",
+    "team": "ARS",
+    "teamid": 1,
+    "pos": 2,
+    "cost": 5.5,
+    "sel": 0.2,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.75,
+    "n_fix": 1,
+    "xp": 3.68,
+    "xp_horizon": 3.17,
+    "xp_gw2": 2.93,
+    "xp_gw3": 3.06,
+    "xp_gw4": 3.15,
+    "xp_gw5": 2.75
+   },
+   {
+    "id": 11,
+    "name": "Mosquera",
+    "team": "ARS",
+    "teamid": 1,
+    "pos": 2,
+    "cost": 5.5,
+    "sel": 16.9,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.82,
+    "n_fix": 1,
+    "xp": 3.59,
+    "xp_horizon": 3.11,
+    "xp_gw2": 2.9,
+    "xp_gw3": 2.96,
+    "xp_gw4": 3.13,
+    "xp_gw5": 2.71
+   },
+   {
+    "id": 533,
+    "name": "Mukiele",
+    "team": "SUN",
+    "teamid": 20,
+    "pos": 2,
+    "cost": 5.5,
+    "sel": 7.7,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.91,
+    "n_fix": 1,
+    "xp": 3.57,
+    "xp_horizon": 3.23,
+    "xp_gw2": 3.67,
+    "xp_gw3": 2.89,
+    "xp_gw4": 3.11,
+    "xp_gw5": 2.45
+   },
+   {
+    "id": 498,
+    "name": "Senesi",
+    "team": "TOT",
+    "teamid": 19,
+    "pos": 2,
+    "cost": 6.0,
+    "sel": 10.9,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.56,
+    "xp_horizon": 4.01,
+    "xp_gw2": 4.1,
+    "xp_gw3": 3.92,
+    "xp_gw4": 4.44,
+    "xp_gw5": 4.35
+   },
+   {
+    "id": 200,
+    "name": "Lacroix",
+    "team": "CHE",
+    "teamid": 6,
+    "pos": 2,
+    "cost": 6.0,
+    "sel": 12.0,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.55,
+    "xp_horizon": 3.63,
+    "xp_gw2": 3.83,
+    "xp_gw3": 3.03,
+    "xp_gw4": 4.48,
+    "xp_gw5": 3.29
+   },
+   {
+    "id": 535,
+    "name": "Alderete",
+    "team": "SUN",
+    "teamid": 20,
+    "pos": 2,
+    "cost": 5.0,
+    "sel": 1.2,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.92,
+    "n_fix": 1,
+    "xp": 3.52,
+    "xp_horizon": 3.19,
+    "xp_gw2": 3.61,
+    "xp_gw3": 2.86,
+    "xp_gw4": 3.1,
+    "xp_gw5": 2.44
+   }
+  ],
+  "MID": [
+   {
+    "id": 426,
+    "name": "B.Fernandes",
+    "team": "MUN",
+    "teamid": 16,
+    "pos": 3,
+    "cost": 12.0,
+    "sel": 48.6,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 5.79,
+    "xp_horizon": 5.78,
+    "xp_gw2": 6.47,
+    "xp_gw3": 5.47,
+    "xp_gw4": 5.54,
+    "xp_gw5": 5.38
+   },
+   {
+    "id": 13,
+    "name": "Rice",
+    "team": "ARS",
+    "teamid": 1,
+    "pos": 3,
+    "cost": 7.5,
+    "sel": 22.3,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 4.65,
+    "xp_horizon": 4.31,
+    "xp_gw2": 4.12,
+    "xp_gw3": 4.36,
+    "xp_gw4": 4.19,
+    "xp_gw5": 4.05
+   },
+   {
+    "id": 427,
+    "name": "Mbeumo",
+    "team": "MUN",
+    "teamid": 16,
+    "pos": 3,
+    "cost": 8.0,
+    "sel": 16.7,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.86,
+    "n_fix": 1,
+    "xp": 4.62,
+    "xp_horizon": 4.62,
+    "xp_gw2": 5.23,
+    "xp_gw3": 4.34,
+    "xp_gw4": 4.39,
+    "xp_gw5": 4.26
+   },
+   {
+    "id": 397,
+    "name": "Semenyo",
+    "team": "MCI",
+    "teamid": 15,
+    "pos": 3,
+    "cost": 8.5,
+    "sel": 22.0,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 4.54,
+    "xp_horizon": 4.37,
+    "xp_gw2": 4.01,
+    "xp_gw3": 4.84,
+    "xp_gw4": 3.89,
+    "xp_gw5": 4.56
+   },
+   {
+    "id": 12,
+    "name": "Saka",
+    "team": "ARS",
+    "teamid": 1,
+    "pos": 3,
+    "cost": 9.5,
+    "sel": 10.6,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.73,
+    "n_fix": 1,
+    "xp": 4.51,
+    "xp_horizon": 4.01,
+    "xp_gw2": 3.7,
+    "xp_gw3": 4.13,
+    "xp_gw4": 3.79,
+    "xp_gw5": 3.62
+   },
+   {
+    "id": 94,
+    "name": "Schade",
+    "team": "BRE",
+    "teamid": 4,
+    "pos": 3,
+    "cost": 6.0,
+    "sel": 2.3,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.9,
+    "n_fix": 1,
+    "xp": 4.51,
+    "xp_horizon": 4.22,
+    "xp_gw2": 3.79,
+    "xp_gw3": 4.46,
+    "xp_gw4": 3.95,
+    "xp_gw5": 4.36
+   },
+   {
+    "id": 481,
+    "name": "Anderson",
+    "team": "MCI",
+    "teamid": 15,
+    "pos": 3,
+    "cost": 6.5,
+    "sel": 11.8,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 4.43,
+    "xp_horizon": 4.35,
+    "xp_gw2": 4.15,
+    "xp_gw3": 4.62,
+    "xp_gw4": 4.09,
+    "xp_gw5": 4.49
+   },
+   {
+    "id": 155,
+    "name": "Enzo",
+    "team": "CHE",
+    "teamid": 6,
+    "pos": 3,
+    "cost": 7.0,
+    "sel": 5.4,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 4.42,
+    "xp_horizon": 4.54,
+    "xp_gw2": 4.79,
+    "xp_gw3": 3.81,
+    "xp_gw4": 5.37,
+    "xp_gw5": 4.43
+   },
+   {
+    "id": 480,
+    "name": "Gibbs-White",
+    "team": "NFO",
+    "teamid": 18,
+    "pos": 3,
+    "cost": 8.0,
+    "sel": 11.8,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 4.27,
+    "xp_horizon": 4.2,
+    "xp_gw2": 3.75,
+    "xp_gw3": 4.49,
+    "xp_gw4": 3.94,
+    "xp_gw5": 4.73
+   },
+   {
+    "id": 399,
+    "name": "Cherki",
+    "team": "MCI",
+    "teamid": 15,
+    "pos": 3,
+    "cost": 7.5,
+    "sel": 9.4,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.72,
+    "n_fix": 1,
+    "xp": 4.19,
+    "xp_horizon": 4.02,
+    "xp_gw2": 3.66,
+    "xp_gw3": 4.48,
+    "xp_gw4": 3.54,
+    "xp_gw5": 4.19
+   },
+   {
+    "id": 542,
+    "name": "E.Le F\u00e9e",
+    "team": "SUN",
+    "teamid": 20,
+    "pos": 3,
+    "cost": 6.0,
+    "sel": 12.3,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 4.12,
+    "xp_horizon": 3.96,
+    "xp_gw2": 4.21,
+    "xp_gw3": 3.87,
+    "xp_gw4": 3.74,
+    "xp_gw5": 3.66
+   },
+   {
+    "id": 237,
+    "name": "Ndiaye",
+    "team": "EVE",
+    "teamid": 9,
+    "pos": 3,
+    "cost": 6.0,
+    "sel": 17.0,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.91,
+    "n_fix": 1,
+    "xp": 3.94,
+    "xp_horizon": 3.86,
+    "xp_gw2": 3.66,
+    "xp_gw3": 3.81,
+    "xp_gw4": 3.72,
+    "xp_gw5": 4.29
+   },
+   {
+    "id": 95,
+    "name": "O.Dango",
+    "team": "BRE",
+    "teamid": 4,
+    "pos": 3,
+    "cost": 6.5,
+    "sel": 1.3,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.74,
+    "n_fix": 1,
+    "xp": 3.88,
+    "xp_horizon": 3.65,
+    "xp_gw2": 3.32,
+    "xp_gw3": 3.84,
+    "xp_gw4": 3.44,
+    "xp_gw5": 3.75
+   },
+   {
+    "id": 260,
+    "name": "Wilson",
+    "team": "LEE",
+    "teamid": 13,
+    "pos": 3,
+    "cost": 6.5,
+    "sel": 8.6,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.88,
+    "n_fix": 1,
+    "xp": 3.75,
+    "xp_horizon": 3.82,
+    "xp_gw2": 4.0,
+    "xp_gw3": 3.58,
+    "xp_gw4": 3.87,
+    "xp_gw5": 3.96
+   },
+   {
+    "id": 368,
+    "name": "Szoboszlai",
+    "team": "LIV",
+    "teamid": 14,
+    "pos": 3,
+    "cost": 7.0,
+    "sel": 47.6,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 3.75,
+    "xp_horizon": 4.01,
+    "xp_gw2": 4.25,
+    "xp_gw3": 4.08,
+    "xp_gw4": 4.16,
+    "xp_gw5": 3.87
+   }
+  ],
+  "FWD": [
+   {
+    "id": 411,
+    "name": "Haaland",
+    "team": "MCI",
+    "teamid": 15,
+    "pos": 4,
+    "cost": 15.5,
+    "sel": 75.0,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 6.43,
+    "xp_horizon": 6.15,
+    "xp_gw2": 5.63,
+    "xp_gw3": 6.83,
+    "xp_gw4": 5.43,
+    "xp_gw5": 6.34
+   },
+   {
+    "id": 106,
+    "name": "Thiago",
+    "team": "BRE",
+    "teamid": 4,
+    "pos": 4,
+    "cost": 8.0,
+    "sel": 15.8,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 4.88,
+    "xp_horizon": 4.63,
+    "xp_gw2": 4.22,
+    "xp_gw3": 4.82,
+    "xp_gw4": 4.4,
+    "xp_gw5": 4.83
+   },
+   {
+    "id": 165,
+    "name": "Jo\u00e3o Pedro",
+    "team": "CHE",
+    "teamid": 6,
+    "pos": 4,
+    "cost": 7.5,
+    "sel": 54.7,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.87,
+    "n_fix": 1,
+    "xp": 4.2,
+    "xp_horizon": 4.3,
+    "xp_gw2": 4.5,
+    "xp_gw3": 3.7,
+    "xp_gw4": 4.94,
+    "xp_gw5": 4.24
+   },
+   {
+    "id": 55,
+    "name": "Watkins",
+    "team": "AVL",
+    "teamid": 2,
+    "pos": 4,
+    "cost": 8.0,
+    "sel": 12.4,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.93,
+    "n_fix": 1,
+    "xp": 4.14,
+    "xp_horizon": 4.3,
+    "xp_gw2": 4.0,
+    "xp_gw3": 4.5,
+    "xp_gw4": 4.75,
+    "xp_gw5": 4.3
+   },
+   {
+    "id": 346,
+    "name": "Calvert-Lewin",
+    "team": "LEE",
+    "teamid": 13,
+    "pos": 4,
+    "cost": 6.0,
+    "sel": 21.3,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.89,
+    "n_fix": 1,
+    "xp": 4.09,
+    "xp_horizon": 4.2,
+    "xp_gw2": 4.45,
+    "xp_gw3": 3.91,
+    "xp_gw4": 4.24,
+    "xp_gw5": 4.39
+   },
+   {
+    "id": 25,
+    "name": "Gy\u00f6keres",
+    "team": "ARS",
+    "teamid": 1,
+    "pos": 4,
+    "cost": 7.5,
+    "sel": 13.0,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.73,
+    "n_fix": 1,
+    "xp": 3.92,
+    "xp_horizon": 3.53,
+    "xp_gw2": 3.27,
+    "xp_gw3": 3.67,
+    "xp_gw4": 3.32,
+    "xp_gw5": 3.23
+   },
+   {
+    "id": 223,
+    "name": "Mateta",
+    "team": "CRY",
+    "teamid": 8,
+    "pos": 4,
+    "cost": 6.5,
+    "sel": 7.0,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.72,
+    "n_fix": 1,
+    "xp": 3.44,
+    "xp_horizon": 3.53,
+    "xp_gw2": 3.52,
+    "xp_gw3": 3.37,
+    "xp_gw4": 4.08,
+    "xp_gw5": 3.3
+   },
+   {
+    "id": 136,
+    "name": "Welbeck",
+    "team": "CHE",
+    "teamid": 6,
+    "pos": 4,
+    "cost": 6.0,
+    "sel": 2.8,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.74,
+    "n_fix": 1,
+    "xp": 3.32,
+    "xp_horizon": 3.4,
+    "xp_gw2": 3.57,
+    "xp_gw3": 2.91,
+    "xp_gw4": 3.93,
+    "xp_gw5": 3.36
+   },
+   {
+    "id": 552,
+    "name": "Brobbey",
+    "team": "SUN",
+    "teamid": 20,
+    "pos": 4,
+    "cost": 6.0,
+    "sel": 20.8,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.85,
+    "n_fix": 1,
+    "xp": 3.2,
+    "xp_horizon": 3.11,
+    "xp_gw2": 3.27,
+    "xp_gw3": 3.08,
+    "xp_gw4": 2.93,
+    "xp_gw5": 2.94
+   },
+   {
+    "id": 379,
+    "name": "Isak",
+    "team": "LIV",
+    "teamid": 14,
+    "pos": 4,
+    "cost": 9.0,
+    "sel": 11.3,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.88,
+    "n_fix": 1,
+    "xp": 3.19,
+    "xp_horizon": 3.41,
+    "xp_gw2": 3.61,
+    "xp_gw3": 3.45,
+    "xp_gw4": 3.53,
+    "xp_gw5": 3.32
+   },
+   {
+    "id": 79,
+    "name": "Evanilson",
+    "team": "BOU",
+    "teamid": 3,
+    "pos": 4,
+    "cost": 6.0,
+    "sel": 2.0,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.9,
+    "n_fix": 1,
+    "xp": 3.05,
+    "xp_horizon": 3.29,
+    "xp_gw2": 3.55,
+    "xp_gw3": 3.11,
+    "xp_gw4": 3.53,
+    "xp_gw5": 3.32
+   },
+   {
+    "id": 464,
+    "name": "Wissa",
+    "team": "NEW",
+    "teamid": 17,
+    "pos": 4,
+    "cost": 6.0,
+    "sel": 1.4,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.65,
+    "n_fix": 1,
+    "xp": 2.85,
+    "xp_horizon": 2.92,
+    "xp_gw2": 2.78,
+    "xp_gw3": 3.12,
+    "xp_gw4": 2.65,
+    "xp_gw5": 3.33
+   },
+   {
+    "id": 527,
+    "name": "Richarlison",
+    "team": "TOT",
+    "teamid": 19,
+    "pos": 4,
+    "cost": 6.0,
+    "sel": 1.9,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.64,
+    "n_fix": 1,
+    "xp": 2.77,
+    "xp_horizon": 2.87,
+    "xp_gw2": 2.89,
+    "xp_gw3": 2.8,
+    "xp_gw4": 3.03,
+    "xp_gw5": 2.96
+   },
+   {
+    "id": 491,
+    "name": "Igor Jesus",
+    "team": "NFO",
+    "teamid": 18,
+    "pos": 4,
+    "cost": 6.0,
+    "sel": 4.9,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.75,
+    "n_fix": 1,
+    "xp": 2.76,
+    "xp_horizon": 2.72,
+    "xp_gw2": 2.53,
+    "xp_gw3": 2.84,
+    "xp_gw4": 2.61,
+    "xp_gw5": 2.95
+   },
+   {
+    "id": 249,
+    "name": "Barry",
+    "team": "EVE",
+    "teamid": 9,
+    "pos": 4,
+    "cost": 5.5,
+    "sel": 0.9,
+    "status": "a",
+    "news": "",
+    "form": 0.0,
+    "p60": 0.62,
+    "n_fix": 1,
+    "xp": 2.58,
+    "xp_horizon": 2.52,
+    "xp_gw2": 2.41,
+    "xp_gw3": 2.5,
+    "xp_gw4": 2.41,
+    "xp_gw5": 2.76
+   }
+  ]
+ },
+ "fixtures": {
+  "1": {
+   "ARS": [
+    {
+     "opp": "COV",
+     "home": true
+    }
+   ],
+   "COV": [
+    {
+     "opp": "ARS",
+     "home": false
+    }
+   ],
+   "HUL": [
+    {
+     "opp": "MUN",
+     "home": true
+    }
+   ],
+   "MUN": [
+    {
+     "opp": "HUL",
+     "home": false
+    }
+   ],
+   "EVE": [
+    {
+     "opp": "CRY",
+     "home": true
+    }
+   ],
+   "CRY": [
+    {
+     "opp": "EVE",
+     "home": false
+    }
+   ],
+   "IPS": [
+    {
+     "opp": "SUN",
+     "home": true
+    }
+   ],
+   "SUN": [
+    {
+     "opp": "IPS",
+     "home": false
+    }
+   ],
+   "NFO": [
+    {
+     "opp": "LEE",
+     "home": true
+    }
+   ],
+   "LEE": [
+    {
+     "opp": "NFO",
+     "home": false
+    }
+   ],
+   "BRE": [
+    {
+     "opp": "TOT",
+     "home": true
+    }
+   ],
+   "TOT": [
+    {
+     "opp": "BRE",
+     "home": false
+    }
+   ],
+   "BHA": [
+    {
+     "opp": "AVL",
+     "home": true
+    }
+   ],
+   "AVL": [
+    {
+     "opp": "BHA",
+     "home": false
+    }
+   ],
+   "MCI": [
+    {
+     "opp": "BOU",
+     "home": true
+    }
+   ],
+   "BOU": [
+    {
+     "opp": "MCI",
+     "home": false
+    }
+   ],
+   "NEW": [
+    {
+     "opp": "LIV",
+     "home": true
+    }
+   ],
+   "LIV": [
+    {
+     "opp": "NEW",
+     "home": false
+    }
+   ],
+   "FUL": [
+    {
+     "opp": "CHE",
+     "home": true
+    }
+   ],
+   "CHE": [
+    {
+     "opp": "FUL",
+     "home": false
+    }
+   ]
+  },
+  "2": {
+   "CRY": [
+    {
+     "opp": "MCI",
+     "home": true
+    }
+   ],
+   "MCI": [
+    {
+     "opp": "CRY",
+     "home": false
+    }
+   ],
+   "LIV": [
+    {
+     "opp": "NFO",
+     "home": true
+    }
+   ],
+   "NFO": [
+    {
+     "opp": "LIV",
+     "home": false
+    }
+   ],
+   "BOU": [
+    {
+     "opp": "EVE",
+     "home": true
+    }
+   ],
+   "EVE": [
+    {
+     "opp": "BOU",
+     "home": false
+    }
+   ],
+   "COV": [
+    {
+     "opp": "HUL",
+     "home": true
+    }
+   ],
+   "HUL": [
+    {
+     "opp": "COV",
+     "home": false
+    }
+   ],
+   "TOT": [
+    {
+     "opp": "NEW",
+     "home": true
+    }
+   ],
+   "NEW": [
+    {
+     "opp": "TOT",
+     "home": false
+    }
+   ],
+   "CHE": [
+    {
+     "opp": "BHA",
+     "home": true
+    }
+   ],
+   "BHA": [
+    {
+     "opp": "CHE",
+     "home": false
+    }
+   ],
+   "LEE": [
+    {
+     "opp": "BRE",
+     "home": true
+    }
+   ],
+   "BRE": [
+    {
+     "opp": "LEE",
+     "home": false
+    }
+   ],
+   "SUN": [
+    {
+     "opp": "FUL",
+     "home": true
+    }
+   ],
+   "FUL": [
+    {
+     "opp": "SUN",
+     "home": false
+    }
+   ],
+   "MUN": [
+    {
+     "opp": "IPS",
+     "home": true
+    }
+   ],
+   "IPS": [
+    {
+     "opp": "MUN",
+     "home": false
+    }
+   ],
+   "AVL": [
+    {
+     "opp": "ARS",
+     "home": true
+    }
+   ],
+   "ARS": [
+    {
+     "opp": "AVL",
+     "home": false
+    }
+   ]
+  },
+  "3": {
+   "IPS": [
+    {
+     "opp": "LIV",
+     "home": true
+    }
+   ],
+   "LIV": [
+    {
+     "opp": "IPS",
+     "home": false
+    }
+   ],
+   "NEW": [
+    {
+     "opp": "BOU",
+     "home": true
+    }
+   ],
+   "BOU": [
+    {
+     "opp": "NEW",
+     "home": false
+    }
+   ],
+   "BRE": [
+    {
+     "opp": "SUN",
+     "home": true
+    }
+   ],
+   "SUN": [
+    {
+     "opp": "BRE",
+     "home": false
+    }
+   ],
+   "BHA": [
+    {
+     "opp": "LEE",
+     "home": true
+    }
+   ],
+   "LEE": [
+    {
+     "opp": "BHA",
+     "home": false
+    }
+   ],
+   "FUL": [
+    {
+     "opp": "CRY",
+     "home": true
+    }
+   ],
+   "CRY": [
+    {
+     "opp": "FUL",
+     "home": false
+    }
+   ],
+   "MCI": [
+    {
+     "opp": "COV",
+     "home": true
+    }
+   ],
+   "COV": [
+    {
+     "opp": "MCI",
+     "home": false
+    }
+   ],
+   "NFO": [
+    {
+     "opp": "TOT",
+     "home": true
+    }
+   ],
+   "TOT": [
+    {
+     "opp": "NFO",
+     "home": false
+    }
+   ],
+   "HUL": [
+    {
+     "opp": "AVL",
+     "home": true
+    }
+   ],
+   "AVL": [
+    {
+     "opp": "HUL",
+     "home": false
+    }
+   ],
+   "EVE": [
+    {
+     "opp": "MUN",
+     "home": true
+    }
+   ],
+   "MUN": [
+    {
+     "opp": "EVE",
+     "home": false
+    }
+   ],
+   "ARS": [
+    {
+     "opp": "CHE",
+     "home": true
+    }
+   ],
+   "CHE": [
+    {
+     "opp": "ARS",
+     "home": false
+    }
+   ]
+  },
+  "4": {
+   "AVL": [
+    {
+     "opp": "NFO",
+     "home": true
+    }
+   ],
+   "NFO": [
+    {
+     "opp": "AVL",
+     "home": false
+    }
+   ],
+   "BOU": [
+    {
+     "opp": "BRE",
+     "home": true
+    }
+   ],
+   "BRE": [
+    {
+     "opp": "BOU",
+     "home": false
+    }
+   ],
+   "CHE": [
+    {
+     "opp": "HUL",
+     "home": true
+    }
+   ],
+   "HUL": [
+    {
+     "opp": "CHE",
+     "home": false
+    }
+   ],
+   "CRY": [
+    {
+     "opp": "IPS",
+     "home": true
+    }
+   ],
+   "IPS": [
+    {
+     "opp": "CRY",
+     "home": false
+    }
+   ],
+   "LIV": [
+    {
+     "opp": "FUL",
+     "home": true
+    }
+   ],
+   "FUL": [
+    {
+     "opp": "LIV",
+     "home": false
+    }
+   ],
+   "TOT": [
+    {
+     "opp": "EVE",
+     "home": true
+    }
+   ],
+   "EVE": [
+    {
+     "opp": "TOT",
+     "home": false
+    }
+   ],
+   "SUN": [
+    {
+     "opp": "ARS",
+     "home": true
+    }
+   ],
+   "ARS": [
+    {
+     "opp": "SUN",
+     "home": false
+    }
+   ],
+   "COV": [
+    {
+     "opp": "BHA",
+     "home": true
+    }
+   ],
+   "BHA": [
+    {
+     "opp": "COV",
+     "home": false
+    }
+   ],
+   "MUN": [
+    {
+     "opp": "MCI",
+     "home": true
+    }
+   ],
+   "MCI": [
+    {
+     "opp": "MUN",
+     "home": false
+    }
+   ],
+   "LEE": [
+    {
+     "opp": "NEW",
+     "home": true
+    }
+   ],
+   "NEW": [
+    {
+     "opp": "LEE",
+     "home": false
+    }
+   ]
+  },
+  "5": {
+   "BRE": [
+    {
+     "opp": "CHE",
+     "home": true
+    }
+   ],
+   "CHE": [
+    {
+     "opp": "BRE",
+     "home": false
+    }
+   ],
+   "TOT": [
+    {
+     "opp": "AVL",
+     "home": true
+    }
+   ],
+   "AVL": [
+    {
+     "opp": "TOT",
+     "home": false
+    }
+   ],
+   "BHA": [
+    {
+     "opp": "ARS",
+     "home": true
+    }
+   ],
+   "ARS": [
+    {
+     "opp": "BHA",
+     "home": false
+    }
+   ],
+   "EVE": [
+    {
+     "opp": "IPS",
+     "home": true
+    }
+   ],
+   "IPS": [
+    {
+     "opp": "EVE",
+     "home": false
+    }
+   ],
+   "LEE": [
+    {
+     "opp": "CRY",
+     "home": true
+    }
+   ],
+   "CRY": [
+    {
+     "opp": "LEE",
+     "home": false
+    }
+   ],
+   "MCI": [
+    {
+     "opp": "SUN",
+     "home": true
+    }
+   ],
+   "SUN": [
+    {
+     "opp": "MCI",
+     "home": false
+    }
+   ],
+   "NEW": [
+    {
+     "opp": "HUL",
+     "home": true
+    }
+   ],
+   "HUL": [
+    {
+     "opp": "NEW",
+     "home": false
+    }
+   ],
+   "NFO": [
+    {
+     "opp": "COV",
+     "home": true
+    }
+   ],
+   "COV": [
+    {
+     "opp": "NFO",
+     "home": false
+    }
+   ],
+   "BOU": [
+    {
+     "opp": "LIV",
+     "home": true
+    }
+   ],
+   "LIV": [
+    {
+     "opp": "BOU",
+     "home": false
+    }
+   ],
+   "FUL": [
+    {
+     "opp": "MUN",
+     "home": true
+    }
+   ],
+   "MUN": [
+    {
+     "opp": "FUL",
+     "home": false
+    }
+   ]
+  }
+ },
+ "flagged": [
+  {
+   "name": "Kroupi.Jr",
+   "team": "BOU",
+   "status": "i",
+   "news": "Foot injury - Unknown return date",
+   "sel": 6.2
+  },
+  {
+   "name": "\u0160e\u0161ko",
+   "team": "MUN",
+   "status": "d",
+   "news": "Shin injury - 75% chance of playing",
+   "sel": 2.8
+  }
+ ]
+}
